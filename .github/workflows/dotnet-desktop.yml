@@ -64,9 +64,9 @@ jobs:
       - name: Run MSBuild
         id: run_msbuild
         run: |
-          msbuild .\Project65030018\Project__65030018.sln  /t:clean /p:Configuration=Debug
-          nuget restore .\Project65030018\Project_65030018.sln
-          msbuild .\Project65030018\Project_65030018.sln  /t:build /p:Configuration=Debug
+          msbuild .\Project65030018\Project65030018.sln  /t:clean /p:Configuration=Debug
+          nuget restore .\Project65030018\Project65030018.sln
+          msbuild .\Project65030018\Project65030018.sln  /t:build /p:Configuration=Debug
      
       - name: Setup VSTest and add to PATH
         uses: darenm/Setup-VSTest@v1
